@@ -32,4 +32,29 @@ b
 Q3. What is an iterator in python? Name the method used to initialise the iterator object and the method
 used for iteration. Use these methods to print the first five elements of the given list [2, 4, 6, 8, 10, 12, 14, 16,
 18, 20].
-iterator is used to iterate though lists tupeles 
+iterator is used to iterate though lists tupels 
+def printValues():
+	l = list()
+	for i in range(2,20):
+		l.append(i**2)
+	print(l[:5])
+	print(l[-5:])
+
+printValues()
+
+Q4. What is a generator function in python? Why yield keyword is used? Give an example of a generator
+function.
+A generator is a kind of function that returns an object called a generator object which can return a series of values rather than a single value.
+ when we want to iterate over a sequence, but don't want to store the entire sequence in memory.
+ def GeneratorFun():
+    yield 1           
+    yield 2           
+    yield 3           
+  
+
+for value in GeneratorFun():
+    print(value)
+    
+ Q5. Create a generator function for prime numbers less than 1000. Use the next() method to print the
+first 20 prime numbers.
+ 
