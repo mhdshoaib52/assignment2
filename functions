@@ -1,0 +1,35 @@
+Q1. Which keyword is used to create a function? Create a function to return a list of odd numbers in the
+range of 1 to 25.
+def is a keyword used to create a function.
+def odd_number(n):
+    return[x for x in range(n+1) if x%2==1]
+print(odd_number(25))
+Q2. Why *args and **kwargs is used in some functions? Create a function each for *args and **kwargs to
+demonstrate their use.
+ special symbol used for arguments *args (Non-Keyword Arguments) **kwargs (Keyword Arguments) 
+ def test22(*args):
+    for a in args:
+        print(a)
+test22('shoaib','is','coder')
+o/p;-shoaib
+is
+coder
+
+def test22(args,*kwargs):
+    print('first argument:',args)
+    for a in args:
+        print(a)
+test22('shoaib','is','coder')
+o/p;-
+first argument: shoaib
+s
+h
+o
+a
+i
+b
+
+Q3. What is an iterator in python? Name the method used to initialise the iterator object and the method
+used for iteration. Use these methods to print the first five elements of the given list [2, 4, 6, 8, 10, 12, 14, 16,
+18, 20].
+iterator is used to iterate though lists tupeles 
